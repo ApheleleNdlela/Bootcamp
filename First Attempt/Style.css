@@ -1,0 +1,38 @@
+* {
+    margin: auto;
+    padding: 0%;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: sticky;
+}
+.background {
+    background-color: burlywood;
+    align-items: center;
+    background-size: cover;
+    background-blend-mode: color;
+}
+.nav-list {
+width: 70%;
+display: flex;
+align-items: center;
+color: darkred;
+}
+.logo {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.logo img {
+    width: 180px;
+    border-radius:50px ;
+}
+.nav-list a {
+    text-decoration: double;
+    color: black;
+    text-transform: uppercase;
+}
+.
