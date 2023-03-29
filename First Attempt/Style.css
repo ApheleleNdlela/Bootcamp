@@ -35,4 +35,16 @@ align-items: center;
     color: black;
     text-transform: uppercase;
 }
-.
+.nav-list li a:hover {
+    color: grey
+}
+#Search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solidgrey;
+    border-radius: 9px;
+}
+.body {
+    background: fixed brown;
+    
+}
