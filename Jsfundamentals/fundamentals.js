@@ -71,13 +71,19 @@ console.log('we can not have a negative year')}
 let b = 4;
 let c = 6;
 
+
+
+
+
+
+
 if (b > a) {console.log('true')} else if 
 (b > c) {console.log('false')} else if
 (b>a && c > b) {console.log('maximum number')}*/
 
-let a = 2;
-let b = 4;
-let c = 6;
+// let a = 2;
+// let b = 4;
+// let c = 6;
 
 /*if (b>a && b>c) {console.log(b)} 
 else if(b<a && a>c){console.log(a)}
@@ -90,3 +96,25 @@ else if (c>b) console.log('true')*/
 
 //corrections
 
+// let x = 5;
+
+// if(x % 2 == 0) {
+//     console.log('even number')
+// }
+// else {console.log('Odd number')
+
+
+// let y = -12
+
+
+function y (){
+     let y = document.getElementById("evennumber").value
+    
+
+if (y % 2 == 0) {
+     alert(y +" "+ "is an even number")
+
+} else { 
+    alert(y +" "+ "odd number")
+}
+}
