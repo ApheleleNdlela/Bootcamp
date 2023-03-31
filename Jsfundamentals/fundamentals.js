@@ -151,3 +151,24 @@
 
 // let arrd = [[0,2,4],[1,3,5],[3,6,9],[7,8,10]]
 // let number6  = arrd[2][1]
+
+
+let arr2d = [20, 311, 12, 11, 13, 15, 9, 4, 0, 10]
+
+let even = [];
+let odd =  [];
+
+for(let i = 0; i < arr2d.length; i++)
+if(arr2d[i] % 2 === 0)
+{
+    even.push(arr2d[i])
+} 
+else {
+    odd.push(arr2d[i])
+
+}
+console.log("Even")
+console.log(even)
+
+console.log("odd")
+console.log(odd)
