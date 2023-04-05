@@ -1,0 +1,24 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+image {
+    font-size: 15rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+background {
+    display: contents;
+    background-color: blue;
+    font-size: medium;
+}
+
