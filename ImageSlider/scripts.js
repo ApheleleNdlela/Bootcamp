@@ -1,14 +1,13 @@
 
-let array = ["image1.jpg", "image2.jpg", "image3.jpg"]
+let array = ["image1.jpg", "image2.jpg", "image4.jpg", "image5.jpg",]
 
+img = document.getElementById("img")
 let x;
 let i = 0;
+img.src = array[i]
 
 function next() {
 
-    img = document.getElementById("img")
-
-    img.src = array[i]
 
     // let x = array[i];
     i ++;
@@ -16,9 +15,11 @@ function next() {
     if(i >= array.length){
         i = 0;
     }
+    img.src = array[i]
     // console.log(x)
 
 }
+
 // next()
 // next()
 // next()
@@ -26,16 +27,14 @@ function next() {
 
 function prev() {
 
-    img = document.getElementById("img")
-    img.src = array[i]
 
     // let x = array[i];
     i --;
     if (i < 0){
-        i = array.length-1
+        i = array.length -1
     }
     // console.log(x)
-    
+    img.src = array[i]
 }
 
 // prev()

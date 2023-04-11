@@ -9,11 +9,14 @@ body {
     justify-content: center;
     align-items: center;
     height: 120vh;
+    color: aqua;
 }
-image {
-    font-size: 10rem;
+img {
+    font-size: 15rem;
     cursor: pointer;
     user-select: none;
+    width: fit-content;
+    height: fit-content;
 }
 
 background {
@@ -21,9 +24,11 @@ background {
     background-color: blue;
     font-size: medium;
 }
-.button :active {
+button :active {
     transform: scale(1.1);
+    color: brown;
 }
-.button-next {
+button-next {
     bottom: right;
+    color: brown;
 }
