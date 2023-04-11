@@ -8,10 +8,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
 }
 image {
-    font-size: 15rem;
+    font-size: 10rem;
     cursor: pointer;
     user-select: none;
 }
@@ -21,4 +21,9 @@ background {
     background-color: blue;
     font-size: medium;
 }
-
+.button :active {
+    transform: scale(1.1);
+}
+.button-next {
+    bottom: right;
+}
