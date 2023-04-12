@@ -1,0 +1,32 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    color: aqua;
+}
+/* image {
+    font-size: 10rem;
+    cursor: pointer;
+    user-select: none; */
+
+
+/* background {
+    display: contents;
+    background-color: blue;
+    font-size: medium; */
+
+/* button :active {
+    transform: scale(1.1);
+    color: brown;
+}
+button-next {
+    bottom: right;
+    color: brown;
+} */
