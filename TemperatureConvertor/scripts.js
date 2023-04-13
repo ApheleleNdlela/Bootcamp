@@ -13,12 +13,15 @@ function TempConv(){
     
     if (!f){
         results.innerHTML =("please enter value")
+    }else if(c <= -273 ) { 
+        results.innerHTML =("It is an absolute Zero")
     } else if
         (c < 16){
         results.innerHTML =(c + " " + "It is cold")
         // alert(c + " " + "It is cold")
-    } else if
-        (c >= 16 && c<21) { 
+    // } else if(c <= -273 ) { 
+    //     results.innerHTML =("It is an absolute Zero")
+    } else if(c >= 16 && c<21) { 
         results.innerHTML =(c + " " + "It is warm, wear T-shirt and Jeans")
         // alert(c + " " + "It is warm, wear T-shirt and Jeans")
     } else {
