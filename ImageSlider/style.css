@@ -3,22 +3,22 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 120vh;
-    color: aqua;
-}
-img {
-    font-size: 15rem;
-    cursor: pointer;
-    user-select: none;
-    width: fit-content;
-    height: fit-content;
+    color: red;
+    background-color: blanchedalmond;
 }
 
+img {
+    width: 150px;
+    height: 150px;
+}
+/* 
 background {
     display: contents;
     background-color: blue;
@@ -31,4 +31,4 @@ button :active {
 button-next {
     bottom: right;
     color: brown;
-}
+} */

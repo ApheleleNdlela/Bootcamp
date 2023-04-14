@@ -1,10 +1,34 @@
+let array;
 
-let array = ["image1.jpg", "image2.jpg", "image4.jpg", "image5.jpg",]
+if (array = sessionStorage.getItem("x")) {
+    array = JSON.parse(sessionStorage.getItem("x"))
+} else {array= ["image1.jpg", "image2.jpg","image3.jpg", "image4.jpg", "image5.jpg",]}
 
-img = document.getElementById("img")
+ img = document.getElementById("img");
+
+// let image;
+// image = array[i]
+// array[i] = document.getElementsByClassName("img")
 let x;
 let i = 0;
 img.src = array[i]
+// Image.src = document.getElementByClassName("img")
+
+function add() {
+    let images = document.getElementById("images").value;
+    array.push(images);
+    document.getElementById('images').value = '';
+    // let image = document.getElementByClassName(".Image")
+    // console.log(array);
+    // let y = sessionStorage.setItem
+
+    sessionStorage.setItem("x",JSON.stringify(array));
+    let y = sessionStorage.getItem(JSON.parse("x"));
+    
+   
+   
+}
+// ADD()
 
 function next() {
 
@@ -62,3 +86,12 @@ function prev() {
 //   const slideWidth = slide.clientWidth;
 //   slidesContainer.scrollLeft -= slideWidth;
 // });
+
+// let image = document.getElementByClassName(".IMAGE")
+
+// function ADD() {
+//     let image = document.getElementByClassName(".IMAGE")
+//     image.push(image)
+//     console.log(image);
+// }
+// ADD()
