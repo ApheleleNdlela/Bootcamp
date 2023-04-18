@@ -1,6 +1,6 @@
 let array;
 
-if (array = sessionStorage.getItem("x")) {
+if (sessionStorage.getItem("x")) {
     array = JSON.parse(sessionStorage.getItem("x"))
 } else {array= ["image1.jpg", "image2.jpg","image3.jpg", "image4.jpg", "image5.jpg",]}
 
@@ -9,26 +9,26 @@ if (array = sessionStorage.getItem("x")) {
 // let image;
 // image = array[i]
 // array[i] = document.getElementsByClassName("img")
-let x;
+// let x;
 let i = 0;
 img.src = array[i]
 // Image.src = document.getElementByClassName("img")
 
-function add() {
-    let images = document.getElementById("images").value;
-    array.push(images);
-    document.getElementById('images').value = '';
-    // let image = document.getElementByClassName(".Image")
-    // console.log(array);
-    // let y = sessionStorage.setItem
+// function add() {
+//     let images = document.getElementById("images").value;
+//     array.push(images);
+//     document.getElementById('images').value = '';
+//     // let image = document.getElementByClassName(".Image")
+//     // console.log(array);
+//     // let y = sessionStorage.setItem
 
-    sessionStorage.setItem("x",JSON.stringify(array));
-    let y = sessionStorage.getItem(JSON.parse("x"));
+//     sessionStorage.setItem("x",JSON.stringify(array));
+//     let y = sessionStorage.getItem(JSON.parse("x"));
     
+
    
-   
-}
-// ADD()
+// }
+// // ADD()
 
 function next() {
 
@@ -95,3 +95,35 @@ function prev() {
 //     console.log(image);
 // }
 // ADD()
+
+function add() {
+    let images = document.getElementById("images").value;
+
+    if(images =="" || images == null){
+       return alert("image url should not be empty")
+    }
+
+    for(let k =0; k < images.length; k++)
+
+    if(images == images[k]){
+       return alert("image already exists")
+    }
+
+    array.push(images);
+    document.getElementById('images').value = '';
+    // let image = document.getElementByClassName(".Image")
+    // console.log(array);
+    // let y = sessionStorage.setItem
+
+    sessionStorage.setItem("x",JSON.stringify(array));
+    sessionStorage.getItem("x");
+    
+}
+// ADD()
+
+
+// function remove() {
+//      let images = document.getElementById("images").value;
+
+//      array.splice(i,1)
+// }

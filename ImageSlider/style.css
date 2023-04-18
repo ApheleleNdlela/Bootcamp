@@ -10,13 +10,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 120vh;
-    color: red;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
     background-color: blanchedalmond;
 }
 
 img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    background-image: -moz-element(image1);
 }
 /* 
 background {
