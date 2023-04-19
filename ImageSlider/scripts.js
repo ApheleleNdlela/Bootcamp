@@ -99,16 +99,16 @@ function prev() {
 function add() {
     let images = document.getElementById("images").value;
 
-    if(images =="" || images == null){
-       return alert("image url should not be empty")
+    if(images ==""){
+        return alert("image url should not be empty")
     }
 
-    for(let k =0; k < images.length; k++)
+    for(let k =0; k < array.length; k++)
 
-    if(images == images[k]){
-       return alert("image already exists")
+    if(images == array[k]){
+        return alert("image already exists")
     }
-
+    
     array.push(images);
     document.getElementById('images').value = '';
     // let image = document.getElementByClassName(".Image")
@@ -116,14 +116,15 @@ function add() {
     // let y = sessionStorage.setItem
 
     sessionStorage.setItem("x",JSON.stringify(array));
-    sessionStorage.getItem("x");
+
     
 }
 // ADD()
 
 
-// function remove() {
-//      let images = document.getElementById("images").value;
-
-//      array.splice(i,1)
-// }
+function remove() {
+    let images = document.getElementById("images").value;
+    array.splice(i,1)
+    window.location.reload;
+    sessionStorage.setItem("x",JSON.stringify(array));
+}

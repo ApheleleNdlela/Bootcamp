@@ -102,11 +102,13 @@
 // emailGen()
 
 
-let number1 = [1, 3, 5, 7]
-let number2 = [0, 2, 4, 6]
-let number3 = [...number1, ...number2]
-let number4 = number1.concat(number2)
+// let number1 = [1, 3, 5, 7]
+// let number2 = [0, 2, 4, 6]
+// // let number3 = [...number1, ...number2]   //spread opperator
+// let number3 = [number1,number2]
+// let number4 = number1.concat(number2)
 
-number3.sort((a,b) =>a-b)
+// number3.sort((a,b) => b-a)
 
-console.log("This is number3", number3)
+// console.log("This is number3", number3)
+                  

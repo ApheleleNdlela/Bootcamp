@@ -153,22 +153,32 @@
 // let number6  = arrd[2][1]
 
 
-let arr2d = [20, 311, 12, 11, 13, 15, 9, 4, 0, 10]
+// let arr2d = [20, 311, 12, 11, 13, 15, 9, 4, 0, 10]
 
-let even = [];
-let odd =  [];
+// let even = [];
+// let odd =  [];
 
-for(let i = 0; i < arr2d.length; i++)
-if(arr2d[i] % 2 === 0)
+// for(let i = 0; i < arr2d.length; i++)
+// if(arr2d[i] % 2 === 0)
+// {
+//     even.push(arr2d[i])
+// } 
+// else {
+//     odd.push(arr2d[i])
+
+// }
+// console.log("Even")
+// console.log(even)
+
+// console.log("odd")
+// console.log(odd)
+
+
+let Array = [5,4,3,2,1,0,1,2,3,4,5];
+let sum = 0;
+
+for (let i = 0; i < Array.length; i++)
 {
-    even.push(arr2d[i])
-} 
-else {
-    odd.push(arr2d[i])
-
+    sum+= Array[i]
 }
-console.log("Even")
-console.log(even)
-
-console.log("odd")
-console.log(odd)
+console.log(sum);
