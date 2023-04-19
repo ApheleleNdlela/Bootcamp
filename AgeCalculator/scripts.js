@@ -29,6 +29,12 @@
 // }
 // AgeCalc()
 
+let y = [];
+    if(sessionStorage.getItem("calc")){
+        y = JSON.parse(sessionStorage.getItem("calc"))
+    } else {
+        results.innerHTML =(x)
+    }
 
 function AgeCalc(){
 
@@ -36,15 +42,15 @@ function AgeCalc(){
     let a = new Date();
     let year = a.getFullYear();
     
-    let x = (year - bornYear)
+    let x = (year - bornYear);
     // let z;
     // z = (bornYear >= 1000)
-    results = document.getElementById("Results")
+    results = document.getElementById("Results");
+   
+    y.push(x)
     results.innerHTML = x
-
-    sessionStorage.setItem("calc",JSON.stringify(x));
-    let u = sessionStorage.getItem("calc");
-    
+    sessionStorage.setItem("calc",JSON.stringify(y));
+    // y.push(x)
 
     // let x = (2023 - bornYear)
 
@@ -52,28 +58,30 @@ function AgeCalc(){
     //     // alert("Age can not be a negative")
     //     results.innerHTML =("Age can not be a negative")
     // } 
-    if (!bornYear){
+    // if (results.innerHTML){
+    //     return("Please enter your bornYear")
+    // }
+    if(!bornYear){
         // alert("Please enter your bornYear")
-        results.innerHTML =("Please enter your bornYear")
+        return results.innerHTML =("Please enter your bornYear")
     }
     else if (bornYear < 0){
     // alert("Born year can not be less than 0")
-    results.innerHTML =("Born year can not be less than 0")
+        results.innerHTML =("Born year can not be less than 0")
     }
-    else if(bornYear<1000){
+    else if(bornYear<1900){
         results.innerHTML =("Please enter 4 digits")
     } 
     else if(bornYear > year){
         results.innerHTML =("bornYear should be less or equal to current year")
+    }   else {
+        results.innerHTML =(x)
     }
     // else if (!bornYear){
     //     // alert("Please enter your bornYear")
     //     results.innerHTML =("Please enter your bornYear")
-    else {
-        alert(x)
-        results.innerHTML =(x)
-    }
+  
 
 }
-AgeCalc()
+// AgeCalc()
 
