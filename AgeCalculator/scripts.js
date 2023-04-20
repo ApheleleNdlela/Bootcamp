@@ -39,17 +39,43 @@ let y = [];
 function AgeCalc(){
 
     let bornYear = document.getElementById("EnterAge").value
+    // console.log(bornYear)
     let a = new Date();
-    let year = a.getFullYear();
     
+    let year = a.getFullYear();
+    // console.log(year)
     let x = (year - bornYear);
+    sessionStorage.setItem("calc",JSON.stringify(y));
+
+    // console.log(x)
     // let z;
     // z = (bornYear >= 1000)
+
     results = document.getElementById("Results");
    
+    if(year == "" || bornYear == ""){
+        // alert("Please enter your bornYear")
+        return results.innerHTML =("Please enter your bornYear")
+    } 
+    else if (bornYear < 0){
+    // alert("Born year can not be less than 0")
+        return results.innerHTML =("Born year can not be less than 0")
+    }
+    else if(bornYear<1900){
+        return results.innerHTML =("Please enter 4 digits")
+    } 
+    else if(bornYear > year){
+        return results.innerHTML =("bornYear should be less or equal to current year")
+    }   else {
+        results.innerHTML =(x)
+    }
+    // else if (!bornYear){
+    //     // alert("Please enter your bornYear")
+    //     results.innerHTML =("Please enter your bornYear")
+
     y.push(x)
     results.innerHTML = x
-    sessionStorage.setItem("calc",JSON.stringify(y));
+   
     // y.push(x)
 
     // let x = (2023 - bornYear)
@@ -61,25 +87,7 @@ function AgeCalc(){
     // if (results.innerHTML){
     //     return("Please enter your bornYear")
     // }
-    if(!bornYear){
-        // alert("Please enter your bornYear")
-        return results.innerHTML =("Please enter your bornYear")
-    }
-    else if (bornYear < 0){
-    // alert("Born year can not be less than 0")
-        results.innerHTML =("Born year can not be less than 0")
-    }
-    else if(bornYear<1900){
-        results.innerHTML =("Please enter 4 digits")
-    } 
-    else if(bornYear > year){
-        results.innerHTML =("bornYear should be less or equal to current year")
-    }   else {
-        results.innerHTML =(x)
-    }
-    // else if (!bornYear){
-    //     // alert("Please enter your bornYear")
-    //     results.innerHTML =("Please enter your bornYear")
+   
   
 
 }
